@@ -20,9 +20,26 @@
         justify-content: center;
         align-items: center;
         .header-item{
-            padding-left: 20px;
+            margin-left: 20px;
+            position: relative;
             &:first-child{
-                padding-left: 0px;
+                margin-left: 0px;
+            }
+            &::after{
+                background: #fff;
+                bottom: -3px;
+                content: "";
+                height: 1px;
+                left: 0;
+                position: absolute;
+                transition: -webkit-transform .5s;
+                transition: transform .5s;
+                transition: transform .5s,-webkit-transform .5s;
+                width: 100%;
+            }
+            &:not(:hover)::after{
+                webkit-transform: scalex(0);
+                transform: scalex(0);
             }
         }
     }

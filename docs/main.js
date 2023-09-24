@@ -345,7 +345,7 @@ __webpack_require__.r(__webpack_exports__);
 class ProductsService {
   constructor(http) {
     this.http = http;
-    this.url = "https://www.jsonkeeper.com/b/BXOV";
+    this.url = "http://localhost:3000/products";
   }
   getProducts() {
     return this.http.get(this.url);

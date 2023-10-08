@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AppPageComponent } from './components/app-page/app-page.component';
 import { AppFooterComponent } from './components/app-footer/app-footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

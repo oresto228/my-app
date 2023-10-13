@@ -20,10 +20,10 @@
         justify-content: center;
         align-items: center;
         .header-item{
-            margin-left: 20px;
+            margin-right: 20px;
             position: relative;
-            &:first-child{
-                margin-left: 0px;
+            &:last-child{
+                margin-right: 0px;
             }
             &::after{
                 background: #fff;

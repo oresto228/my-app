@@ -9,6 +9,7 @@ import { ProductsService } from 'src/app/services/products.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  categories: string[] =["men's-clothing", "women's-clothing","electronics","jewelry"];
   products:IProduct[];
   productsSubscription:Subscription;
 constructor(private ProductsService:ProductsService){

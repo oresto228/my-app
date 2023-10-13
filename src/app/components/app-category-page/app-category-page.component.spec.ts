@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppElectronicsPageComponent } from './app-electronics-page.component';
+import { AppCategoryPageComponent } from './app-category-page.component';
 
 describe('AppElectronicsPageComponent', () => {
-  let component: AppElectronicsPageComponent;
-  let fixture: ComponentFixture<AppElectronicsPageComponent>;
+  let component: AppCategoryPageComponent;
+  let fixture: ComponentFixture<AppCategoryPageComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AppElectronicsPageComponent]
+      declarations: [AppCategoryPageComponent]
     });
-    fixture = TestBed.createComponent(AppElectronicsPageComponent);
+    fixture = TestBed.createComponent(AppCategoryPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,12 +1,9 @@
-<div class="header-top justify-center ">
+<div class="header-top justify-center "*ngIf="categories">
     <a class="logo uppercase text-3xl text-center " routerLink="/">logo</a>
 </div>
 <div class="header-bottom">
     <div class="header-menu">
-        <div class="header-item"><a [routerLink]="['/category']">men's clothing</a></div>
-        <div class="header-item"><a [routerLink]="['/category',]">women's clothing</a></div>
-        <div class="header-item"><a [routerLink]="['/category',]">jewelery</a></div>
-        <div class="header-item"><a [routerLink]="['/electronics']">electronics</a></div>
+        <div class="header-item"*ngFor="let category of categories"><a [routerLink]="['/category',category]">{{category|uppercase}}</a></div>
     </div>
 
 </div>

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription, switchMap } from 'rxjs';
+import { IProduct } from 'src/app/models/product';
 
 @Component({
   selector: 'app-app-electronics-page',
@@ -9,6 +10,7 @@ import { Subscription, switchMap } from 'rxjs';
   styleUrls: ['./app-category-page.component.scss']
 })
 export class AppCategoryPageComponent {
+  products:IProduct[];
   private subscription: Subscription;
   categories: string[] =["men's-clothing", "women's-clothing","electronics","jewelry"];
   constructor(private route: ActivatedRoute) {

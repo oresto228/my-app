@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { Subscription } from 'rxjs';
 import { IProduct } from 'src/app/models/product';
 import { ProductsService } from 'src/app/services/products.service';
@@ -8,7 +8,7 @@ import { ProductsService } from 'src/app/services/products.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent  {
   categories: string[] =["men's-clothing", "women's-clothing","electronics","jewelry"];
   products:IProduct[];
   productsSubscription:Subscription;

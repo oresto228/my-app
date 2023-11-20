@@ -2,6 +2,9 @@
     <a class="logo uppercase text-3xl text-center " routerLink="/">logo</a>
 </div>
 <div class="header-bottom">
+    <button class="burger" >
+        <i class="matirial-icons"></i>
+    </button>
     <div class="header-menu">
         <div class="header-item"*ngFor="let category of categories"><a [routerLink]="['/category',category]">{{category|uppercase}}</a></div>
     </div>

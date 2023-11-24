@@ -6,7 +6,7 @@ import { IProduct } from '../models/product';
   providedIn: 'root'
 })
 export class ProductsService {
-  url:string="https://www.jsonkeeper.com/b/BXOV"
+  url:string="http://localhost:3000/products"
 
   constructor(private http: HttpClient) { }
   getProducts(){

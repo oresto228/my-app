@@ -8,6 +8,7 @@ import { ProductComponent } from './components/product/product.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AppPageComponent } from './components/app-page/app-page.component';
 import { AppFooterComponent } from './components/app-footer/app-footer.component';
+import { AppCategoryPageComponent } from './components/app-category-page/app-category-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AppFooterComponent } from './components/app-footer/app-footer.component
     ProductComponent,
     HeaderComponent,
     AppPageComponent,
-    AppFooterComponent
+    AppFooterComponent,
+    AppCategoryPageComponent
   ],
   imports: [
     BrowserModule,
